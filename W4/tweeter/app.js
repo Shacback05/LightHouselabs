@@ -43,7 +43,7 @@ $(document).ready(function () {
     if (newTweetText.trim() === '' || newTweetText.length > 140) {
       alert('Invalid tweet! Please check the character limit.');
     } else {
-      const username = 'User'; // Replace with actual user authentication
+      const username = 'VickyJay'; // Replace with actual user authentication
       const tagname = username.toLowerCase(); // Replace with actual user tagname
       const createdAt = new Date().toLocaleString();
 
@@ -85,14 +85,14 @@ $(document).ready(function () {
     const index = $(this).data('index');
     const tweet = tweets[index];
 
-    if (tweet.likedBy.includes('User')) {
+    if (tweet.likedBy.includes('VickyJay')) {
       // If the user already liked the tweet, unlike it
       tweet.likes--;
-      tweet.likedBy = tweet.likedBy.filter((user) => user !== 'User');
+      tweet.likedBy = tweet.likedBy.filter((user) => user !== 'VickyJay');
     } else {
       // If the user hasn't liked the tweet, like it
       tweet.likes++;
-      tweet.likedBy.push('User');
+      tweet.likedBy.push('VickyJay');
     }
 
     renderTweets();
@@ -104,7 +104,7 @@ $(document).ready(function () {
     const originalTweet = tweets[index];
 
     const retweetText = `RT @${originalTweet.username}: ${originalTweet.text}`;
-    const username = 'User'; // Replace with actual user authentication
+    const username = 'VickyJay'; // Replace with actual user authentication
     const createdAt = new Date().toLocaleString();
 
     const retweet = {
@@ -159,7 +159,7 @@ $(document).ready(function () {
       );
       $tweetDiv.append(`<div class="tweet-likes">
                           <span class="like-btn ${
-                            tweet.likedBy.includes('User') ? 'active' : ''
+                            tweet.likedBy.includes('VickyJay') ? 'active' : ''
                           }" data-index="${index}">❤️ ${tweet.likes}</span>
                           <span class="retweet-btn ${
                             tweet.retweets > 0 ? 'active' : ''
