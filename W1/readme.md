@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repository contains all of the notes taken by [Abdulrahman](https://github.com/Shacback05/) for the Lighthouse Labs Web Development Bootcamp.
+This repository contains all of the notes taken by [Tope](https://github.com/Shacback05/) for the Lighthouse Labs Web Development Bootcamp.
 
 ## Table of Contents
 
